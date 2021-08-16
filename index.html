@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cash Register</title>
     <link rel="stylesheet" href="style.css">
-
+    
 </head>
 
 <body>
@@ -18,39 +18,25 @@
 
         <p>Enter the bill amount and cash given by the customer and know minimum number of notes to return.</p>
 
-        <lable id="bill-amount">Bill Amount:</lable>
+        <label for="bill-amount">Bill Amount</label>
         <input type="text" id="bill-amount">
-        <lable id="cash-given">Cash Given:</lable>
+        <label for="cash-given">Cash Given</label>
         <input type="text" id="cash-given">
         <button id="check-btn">Check</button>
 
-        <div id="error-msg"></div>
+        <div id="msg-display"></div>
 
         <table id="return-change">
 
             <tr>
                 <th>No. of Notes</th>
-                <td>
-                    <div id="no-of-notes"></div>
-                </td>
-                <td>
-                    <div id="no-of-notes"></div>
-                </td>
-                <td>
-                    <div id="no-of-notes"></div>
-                </td>
-                <td>
-                    <div id="no-of-notes"></div>
-                </td>
-                <td>
-                    <div id="no-of-notes"></div>
-                </td>
-                <td>
-                    <div id="no-of-notes"></div>
-                </td>
-                <td>
-                    <div id="no-of-notes"></div>
-                </td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
             </tr>
 
             <tr>
@@ -70,5 +56,4 @@
 
 </body>
 <script src="app.js"></script>
-
 </html>
