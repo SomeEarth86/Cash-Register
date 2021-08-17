@@ -1,8 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=STIX+Two+Text:wght@500&display=swap');
 
+#cashGivenDiv {
+    display: none;
+}
+
+#returnChangeDiv {
+    display: none;
+}
 
 
-.container{
+.container {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -16,23 +23,23 @@
     font-size: 1.1rem;
 }
 
-body{
+body {
     margin: 0;
 }
 
-#bill-amount{
+#bill-amount {
     width: 50%;
     margin: auto;
     padding: 0.4rem;
 }
 
-#cash-given{
+#cash-given {
     width: 50%;
     margin: auto;
     padding: 0.4rem;
 }
 
-#next-btn{
+#next-btn {
     width: 10%;
     margin: auto;
     padding: 0.3rem;
@@ -40,7 +47,7 @@ body{
     margin-bottom: 2rem;
 }
 
-#check-btn{
+#check-btn {
     width: 10%;
     margin: auto;
     padding: 0.3rem;
@@ -48,24 +55,25 @@ body{
     margin-bottom: 2rem;
 }
 
-#msg-display{
-        width: 70%;
-        margin: auto;
-        margin-bottom: 1.5rem;
+#msg-display {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 1.5rem;
 }
 
-table{
+table {
     table-layout: fixed;
     width: 100%;
     border: 1px solid black;
 }
 
-#caption-return{
+#caption-return {
 
     margin-bottom: 1rem;
 }
 
-#return-change th,td{
+.return-change th,
+td {
     color: black;
     border: 2px solid black;
     border-collapse: collapse;
