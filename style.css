@@ -14,7 +14,6 @@
     flex-direction: column;
     width: 100%;
     max-width: 500px;
-    max-height: 500px;
     margin: auto;
     text-align: center;
     --tw-bg-opacity: 1;
@@ -37,6 +36,7 @@ body {
     width: 50%;
     margin: auto;
     padding: 0.4rem;
+    display: block;
 }
 
 #next-btn {
@@ -68,8 +68,7 @@ table {
 }
 
 #caption-return {
-
-    margin-bottom: 1rem;
+     margin-bottom: 1rem;
 }
 
 .return-change th,
