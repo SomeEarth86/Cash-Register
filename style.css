@@ -77,3 +77,21 @@ td {
     border: 2px solid black;
     border-collapse: collapse;
 }
+
+.footer{
+    margin-top: 3rem;
+    padding: 1.5rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    position: fixed;
+}
+.footerText{
+    font-size: 1.3rem;
+}
+
+img{
+    padding: 0.7rem;
+    width: 50px;
+}
