@@ -51,6 +51,7 @@ checkButton.addEventListener("click", function validateCashandBill() {
         showMessage("Thanks for the Imaginary currency but we don't do that here ")
 } 
     else{ 
+        returnChangeDiv.style.display = "none";
         showMessage("Congratulations for becoming DishWasher today, #HappyOnboarding");
     }
 
