@@ -36,22 +36,29 @@ function minimiseReturnAmount(returnAmount) {
 
 checkButton.addEventListener("click", function validateCashandBill() {
     hideMessage();
-    
-    if( Number(cashGiven.value) >= Number(billAmount.value) ) {
+    if(billAmount.value > 0 && cashGiven.value >0)
+    { 
+        if( Number(cashGiven.value) > Number(billAmount.value) ) {
         const returnAmount = cashGiven.value - billAmount.value;
         minimiseReturnAmount(returnAmount);
         console.log(returnAmount);
     }
-   
+    else if(Number(cashGiven.value) === Number(billAmount.value)){
+        returnChangeDiv.style.display ="none";
+        showMessage("That's a perfect bill !!!! ");
+    }
     else if (Number(cashGiven.value) <= 0) {
-
         showMessage("Thanks for the Imaginary currency but we don't do that here ")
-
-    } 
+} 
     else{ 
         showMessage("Congratulations for becoming DishWasher today, #HappyOnboarding");
     }
-    
+
+    }//end of main if
+    else{
+        returnChangeDiv.style.display ="none";
+        showMessage("Enter valid amounts in both field");
+    }
 });
 
 function showMessage(msg) {
