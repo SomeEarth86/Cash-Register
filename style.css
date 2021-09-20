@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=STIX+Two+Text:wght@500&display=swap');
 
+*{
+    font-family: 'STIX Two Text', serif;
+}
+
 #cashGivenDiv {
     display: none;
 }
@@ -18,8 +22,8 @@
     text-align: center;
     --tw-bg-opacity: 1;
     background-color: rgba(217, 119, 6, var(--tw-bg-opacity));
-    font-family: 'STIX Two Text', serif;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
+
 }
 
 body {
@@ -48,9 +52,10 @@ body {
 }
 
 #check-btn {
-    width: 10%;
+    width: 15%;
+    border-radius: 0.8rem;
     margin: auto;
-    padding: 0.3rem;
+    padding: 0.6rem;
     margin-top: 1rem;
     margin-bottom: 2rem;
 }
